@@ -1,5 +1,5 @@
-$clr-primary: #579c87;
-$clr-secondary:#FCC946;
+@import "../components/fonts";
+@import "../components/variables";
 
 html, body {
   height: 100%;
@@ -23,11 +23,10 @@ header {
 
 #logo {
   width: 260px;
-  @media (max-width: 599px) {
+  @media screen and (max-width: 599px) {
     width: 220px;
   }
 }
-
 
 /* Footer  */
 footer {
@@ -45,7 +44,7 @@ footer a {
   font-size: 1.8rem;
   color: $clr-secondary;
   text-decoration: none;
-  @media (max-width: 599px) {
+  @media screen and (max-width: 599px) {
     font-size: 1.3rem;
   }
 }
@@ -62,13 +61,13 @@ footer a {
 
 .button_wiggle {
   &:hover {
-    animation: headshake 100ms cubic-bezier(0,.7,1,.4) 4;
+    animation: shake 100ms cubic-bezier(0,.7,1,.4) 4;
   }
 }
 
 $shake-intensity: 1%;
 
-@keyframes headshake {
+@keyframes shake {
   25% {
     transform: translateX($shake-intensity);
   }

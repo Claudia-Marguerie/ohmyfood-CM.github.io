@@ -1,3 +1,33 @@
+@font-face {
+  font-family: "Devonshire-Regular";
+  src: url("fonts/Devonshire-Regular.eot");
+  src: url("fonts/Devonshire-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Devonshire-Regular.svg") format("svg"), url("fonts/Devonshire-Regular.ttf") format("ttf"), url("fonts/Devonshire-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Segoe Print";
+  src: url("fonts/Segoe Print.eot");
+  src: url("fonts/Segoe Print.eot?#iefix") format("embedded-opentype"), url("fonts/Segoe Print.svg") format("svg"), url("fonts/Segoe Print.ttf") format("ttf"), url("fonts/Segoe Print.woff") format("woff");
+}
+@font-face {
+  font-family: "Croissant One";
+  src: url("fonts/Croissant One.eot");
+  src: url("fonts/Croissant One.eot?#iefix") format("embedded-opentype"), url("fonts/Croissant One.svg") format("svg"), url("fonts/Croissant One.ttf") format("ttf"), url("fonts/Croissant One.woff") format("woff");
+}
+@font-face {
+  font-family: "Cardiff V2";
+  src: url("fonts/Cardiff V2.eot");
+  src: url("fonts/Cardiff V2.eot?#iefix") format("embedded-opentype"), url("fonts/Cardiff V2.svg") format("svg"), url("fonts/Cardiff V2.ttf") format("ttf"), url("fonts/Cardiff V2.woff") format("woff");
+}
+@font-face {
+  font-family: "Dancing Script";
+  src: url("fonts/Dancing Script.eot");
+  src: url("fonts/Dancing Script.eot?#iefix") format("embedded-opentype"), url("fonts/Dancing Script.svg") format("svg"), url("fonts/Dancing Script.ttf") format("ttf"), url("fonts/Dancing Script.woff") format("woff");
+}
+@font-face {
+  font-family: "Kaushan Script";
+  src: url("fonts/Kaushan Script.eot");
+  src: url("fonts/Kaushan Script.eot?#iefix") format("embedded-opentype"), url("fonts/Kaushan Script.svg") format("svg"), url("fonts/Kaushan Script.ttf") format("ttf"), url("fonts/Kaushan Script.woff") format("woff");
+}
 html, body {
   height: 100%;
   margin: 0;
@@ -21,7 +51,7 @@ header {
 #logo {
   width: 260px;
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   #logo {
     width: 220px;
   }
@@ -44,7 +74,7 @@ footer a {
   color: #FCC946;
   text-decoration: none;
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   footer a {
     font-size: 1.3rem;
   }
@@ -61,10 +91,10 @@ footer a {
 }
 
 .button_wiggle:hover {
-  animation: headshake 100ms cubic-bezier(0, 0.7, 1, 0.4) 4;
+  animation: shake 100ms cubic-bezier(0, 0.7, 1, 0.4) 4;
 }
 
-@keyframes headshake {
+@keyframes shake {
   25% {
     transform: translateX(1%);
   }
@@ -87,35 +117,37 @@ footer a {
   max-width: 1200px;
 }
 
-.zoom {
+/* Each Menu*/
+.menu {
   width: 380px;
   overflow: hidden;
   margin: 50px 30px 0px 30px;
   box-shadow: 0 0 15px lightgrey;
 }
-@media (max-width: 599px) {
-  .zoom {
+@media screen and (max-width: 599px) {
+  .menu {
     width: 280px;
   }
 }
 
-.menu {
+.zoom {
   width: 380px;
   display: block;
   transform: scale(1);
   transition: all 600ms ease-in-out;
   opacity: 0.8;
 }
-@media (max-width: 599px) {
-  .menu {
+@media screen and (max-width: 599px) {
+  .zoom {
     width: 280px;
   }
 }
-.menu:hover {
+.zoom:hover {
   transform: scale(1.3);
   opacity: 1;
 }
 
+/* Section Prochainement*/
 .container_prochainement {
   width: 360px;
   height: 50px;
@@ -129,7 +161,7 @@ footer a {
   color: #FCC946;
   margin: 50px 0px 120px 0px;
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .container_prochainement {
     width: 250px;
     font-size: 1.5rem;
@@ -209,7 +241,7 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 50px;
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   h1 {
     font-size: 1.7em;
   }
@@ -225,7 +257,7 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .menu_description {
     width: 80%;
     min-width: 0;
@@ -559,7 +591,7 @@ section .texte--la_palette {
   width: 100%;
   margin-bottom: 40px;
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .final {
     margin-bottom: 10px;
   }
@@ -568,7 +600,7 @@ section .texte--la_palette {
   height: 50px;
   margin-right: 15px;
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .final img {
     height: 38px;
   }
@@ -578,7 +610,7 @@ section .texte--la_palette {
   font-size: 2.7em;
   color: #3d1319;
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .final p {
     font-size: 2em;
   }
@@ -590,7 +622,7 @@ section .texte--la_palette {
   margin-top: 70px;
   margin-bottom: 130px;
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .btn-retour {
     width: 180px;
     font-size: 1.5em;
