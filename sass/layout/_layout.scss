@@ -55,11 +55,17 @@ footer a {
 .btn_left {
   margin-left: 3%;
   margin-right: auto;
+  @media screen and (max-width: 599px) {
+    text-align: center;
+  }
 }
 
 .btn_right {
   margin-right: 3%;
   margin-left: auto;
+  @media screen and (max-width: 599px) {
+    text-align: center;
+  }
 }
 
 .button_wiggle {
