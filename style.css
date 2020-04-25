@@ -74,9 +74,14 @@ footer a {
   color: #FCC946;
   text-decoration: none;
 }
+@media screen and (max-width: 900px) {
+  footer a {
+    font-size: 1.5rem;
+  }
+}
 @media screen and (max-width: 599px) {
   footer a {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -161,10 +166,16 @@ footer a {
   color: #FCC946;
   margin: 50px 0px 120px 0px;
 }
+@media screen and (max-width: 900px) {
+  .container_prochainement {
+    width: 300px;
+    font-size: 1.6rem;
+  }
+}
 @media screen and (max-width: 599px) {
   .container_prochainement {
     width: 250px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -174,6 +185,16 @@ footer a {
   margin-left: 10px;
   padding-bottom: 11px;
 }
+@media screen and (max-width: 900px) {
+  .load {
+    padding-bottom: 14px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .load {
+    padding-bottom: 16px;
+  }
+}
 .load__point {
   width: 8px;
   height: 8px;
@@ -181,6 +202,20 @@ footer a {
   margin-right: 3px;
   background-color: #FCC946;
   animation: points 800ms backwards infinite ease-in-out alternate;
+}
+@media screen and (max-width: 900px) {
+  .load__point {
+    width: 7px;
+    height: 7px;
+    border-radius: 4px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .load__point {
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+  }
 }
 .load__point--1 {
   animation-delay: 400ms;
@@ -367,10 +402,17 @@ section .sous-titre--la_note {
   margin-right: 70px;
   color: #3d1319;
 }
+@media screen and (max-width: 900px) {
+  section .sous-titre--la_note {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
 @media screen and (max-width: 599px) {
   section .sous-titre--la_note {
     margin-left: 20px;
     margin-right: 20px;
+    font-size: 1em;
   }
 }
 section .sous-titre--la_note img {
@@ -479,6 +521,12 @@ section .texte--la_note {
   font-family: Segoe Print, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #3d1319;
 }
+@media screen and (max-width: 900px) {
+  section .texte--la_note {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
 @media screen and (max-width: 599px) {
   section .texte--la_note {
     margin-left: 20px;
@@ -489,6 +537,12 @@ section .texte--le_chic {
   margin-left: 110px;
   margin-right: 110px;
   font-family: Cardiff V2, "Times New Roman", Times, serif;
+}
+@media screen and (max-width: 900px) {
+  section .texte--le_chic {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 }
 @media screen and (max-width: 599px) {
   section .texte--le_chic {
@@ -513,6 +567,12 @@ section .texte--le_delice {
   margin-right: 110px;
   font-family: Segoe Print, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+@media screen and (max-width: 900px) {
+  section .texte--le_delice {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
 @media screen and (max-width: 599px) {
   section .texte--le_delice {
     margin-left: 30px;
@@ -523,6 +583,12 @@ section .texte--la_palette {
   margin-left: 110px;
   margin-right: 110px;
   font-family: Segoe Print, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 900px) {
+  section .texte--la_palette {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 }
 @media screen and (max-width: 599px) {
   section .texte--la_palette {

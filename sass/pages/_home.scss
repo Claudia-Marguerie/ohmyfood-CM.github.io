@@ -52,9 +52,13 @@
   font-size: 2rem;
   color: $clr-secondary;
   margin: 50px 0px 120px 0px;
+  @media screen and (max-width: 900px) {
+    width: 300px;
+    font-size: 1.6rem;
+  }
   @media screen and (max-width: 599px) {
     width: 250px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -63,6 +67,12 @@
   align-self: flex-end;
   margin-left: 10px;
   padding-bottom: 11px;
+  @media screen and (max-width: 900px) {
+    padding-bottom: 14px;
+  }
+  @media screen and (max-width: 599px) {
+    padding-bottom: 16px;
+  }
   &__point {
     width: 8px;
     height: 8px;
@@ -70,6 +80,16 @@
     margin-right: 3px;
     background-color: $clr-secondary;
     animation: points 800ms backwards infinite ease-in-out alternate;
+    @media screen and (max-width: 900px) {
+      width: 7px;
+      height: 7px;
+      border-radius: 4px;
+    }
+    @media screen and (max-width: 599px) {
+      width: 6px;
+      height: 6px;
+      border-radius: 3px;
+    }
     &--1 {
       animation-delay: 400ms;
     }
