@@ -373,7 +373,7 @@ h1 {
 }
 @media screen and (max-width: 599px) {
   .titre--le_chic {
-    height: 80px;
+    height: 50px;
     margin-top: 60px;
   }
 }
@@ -393,7 +393,7 @@ h1 {
 }
 @media screen and (max-width: 599px) {
   .titre--le_delice {
-    height: 110px;
+    height: 70px;
     margin-top: 50px;
   }
 }
@@ -413,7 +413,7 @@ h1 {
 }
 @media screen and (max-width: 599px) {
   .titre--la_palette {
-    height: 130px;
+    height: 70px;
     margin-top: 50px;
   }
 }
