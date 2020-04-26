@@ -379,7 +379,8 @@ h1 {
 @media screen and (max-width: 599px) {
   .titre--le_chic {
     height: auto;
-    margin-top: 50px;
+    min-height: 60px;
+    margin-top: 60px;
   }
 }
 .titre--le_delice {
@@ -398,7 +399,7 @@ h1 {
 }
 @media screen and (max-width: 900px) {
   .titre--le_delice {
-    height: auto;
+    height: 70px;
     margin-top: 50px;
     font-size: 2.1em;
   }
@@ -406,7 +407,8 @@ h1 {
 @media screen and (max-width: 599px) {
   .titre--le_delice {
     height: auto;
-    margin-top: 40px;
+    min-height: 60px;
+    margin-top: 50px;
   }
 }
 .titre--la_palette {
@@ -425,15 +427,16 @@ h1 {
 }
 @media screen and (max-width: 900px) {
   .titre--la_palette {
-    height: auto;
+    height: 80px;
     margin-top: 50px;
     font-size: 2.1em;
   }
 }
 @media screen and (max-width: 599px) {
   .titre--la_palette {
-    height: auto;
-    margin-top: 40px;
+    height: 60px;
+    margin-top: 50px;
+    font-size: 1.8em;
   }
 }
 
