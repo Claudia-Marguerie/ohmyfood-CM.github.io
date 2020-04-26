@@ -336,7 +336,7 @@ h1 {
 }
 @media screen and (max-width: 599px) {
   .titre h2 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 }
 .titre--la_note {
@@ -370,10 +370,16 @@ h1 {
 .titre--le_chic > h2 {
   display: inline;
 }
+@media screen and (max-width: 900px) {
+  .titre--le_chic {
+    height: 90px;
+    margin-top: 90px;
+  }
+}
 @media screen and (max-width: 599px) {
   .titre--le_chic {
-    height: 50px;
-    margin-top: 60px;
+    height: 80px;
+    margin-top: 50px;
   }
 }
 .titre--le_delice {
@@ -390,9 +396,16 @@ h1 {
 .titre--le_delice > h2 {
   display: inline;
 }
+@media screen and (max-width: 900px) {
+  .titre--le_delice {
+    height: 90px;
+    margin-top: 70px;
+    font-size: 2.1em;
+  }
+}
 @media screen and (max-width: 599px) {
   .titre--le_delice {
-    height: 70px;
+    height: 110px;
     margin-top: 50px;
   }
 }
@@ -410,10 +423,17 @@ h1 {
 .titre--la_palette > h2 {
   display: inline;
 }
+@media screen and (max-width: 900px) {
+  .titre--la_palette {
+    height: 90px;
+    margin-top: 60px;
+    font-size: 2.1em;
+  }
+}
 @media screen and (max-width: 599px) {
   .titre--la_palette {
-    height: 70px;
-    margin-top: 50px;
+    height: 120px;
+    margin-top: 40px;
   }
 }
 
